@@ -1,4 +1,3 @@
-
 body {
     background-color: #e4e8e6;
     font-family: "Karla", sans-serif;
@@ -13,7 +12,6 @@ figure {
     display: block;
     margin: 0;
 }
-
 
 img {
     max-width: 100%;
@@ -31,6 +29,35 @@ a {
     text-decoration: none;
 }
 
+
+h1 {
+    font-family: "nothing you could do";
+    font-size: 30px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+h2 {
+    font-family: "oswald";
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: #69766c;
+}
+
+h3 {
+    font-family: "oswald";
+    font-size: 20px;
+}
+
+h4 {
+    font-family: "karla";
+    font-size: 20px;
+    text-align: center;
+}
+
 a:hover {
     color: #F5C664;
     text-decoration: none;
@@ -39,19 +66,20 @@ a:hover {
 .head-wrapper {
     display: grid;
     grid-gap: 2em;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: transparent;
     color: #1f2220;
-    height: 100px;
     margin: 0 10%;
     align-self: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /*    height: 10%;*/
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .header {
     grid-column: 1/2;
+    grid-row: 1/3;
     height: 100px;
     align-self: end;
 }
@@ -61,8 +89,9 @@ a:hover {
 }
 
 .navbar {
-    grid-column: 2/3;
+    grid-column: 2/4;
     align-self: center;
+    align-content: center;
 }
 
 .navbar-pages {
@@ -77,7 +106,7 @@ a:hover {
 .pagebutt {
     margin: 0 0 0 50px;
     transform: translate(100px, 0);
-    }
+}
 
 .portfolio-wrapper {
     display: grid;
@@ -88,58 +117,6 @@ a:hover {
     justify-items: center;
 }
 
-.resume {
-    padding-top: 100px;
-    text-align: center;
-    justify-content: center;
-}
-
-.resume-preview img {
-    width: 70%;
-}
-
-.full-document {
-	padding-top: 30px;
-	text-align: center;
-	justify-content: center;
-}
-
-
-
-.about-me {
-    grid-column: 1/4;
-    grid-row: 3/4;
-}
-
-.footer {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-.footer-bar {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-}
-
-.fa-stack {
-    justify-content: center;
-}
-
-.copyright {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    justify-content: center;
-    text-align: center;
-}
 
 .worksamples {
     display: block;
@@ -192,77 +169,199 @@ a:hover {
     z-index: 2;
 }
 
-
-h1 {
-    font-family: "nothing you could do";
-    font-size: 30px;
-    bottom: 0;
-    left: 0;
+.full-landscape-xl {
+    max-width: 113%;
+    transform: translate(-7%, 0);
+    justfy-content: center;
     text-align: center;
+    padding-bottom: 20px;
+}
+
+.full-landscape {
+    max-width: 100%;
+    justfy-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.full-portrait {
+    max-width: 85%;
+    text-align;
+    center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.resume {
+    padding-top: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.resume-preview img {
+    width: 70%;
+}
+
+.full-document {
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
 }
 
 .work-fullpage-desc {
-	align-items: center;
-	text-align:center;
-	padding-bottom: 50px;
-	
-}
-
-h2 {
-    font-family: "oswald";
-    font-size: 35px;
+    align-items: center;
     text-align: center;
     padding-bottom: 50px;
-        color: #69766c;
+}
+
+.about-me {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.footer-bar {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    /*    align-content: middle;*/
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
+
+.copyright {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-content: center;
+    text-align: center;
 }
 
 .full-desc {
-	font-family: "karla";
-	font-size: 18px;
-	padding-bottom: 20px;
-	text-align: center;
+    font-family: "karla";
+    font-size: 18px;
+    padding-bottom: 20px;
+    text-align: center;
     width: 65%;
     margin: auto;
     word-wrap: break-word;
 }
 
-h3 {
-    font-family: "oswald";
-    font-size: 20px;
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    top: 50%;
 }
 
-h4 {
-    font-family: "karla";
-    font-size: 20px;
+.fa-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     text-align: center;
-}
-
-.fa-inverse {
-    color: #fff;
-}
-
-.fa-stack-1x {
+    vertical-align: middle;
+    font-size: 2.3em;
     line-height: inherit;
 }
 
-.full-landscape-xl {
-	max-width: 113%;
-	transform: translate(-7%, 0);
-	justfy-content: center;
-	text-align: center;
-	padding-bottom: 20px;
+.fa-inverse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 1.25em;
+    line-height: inherit;
 }
 
-.full-landscape {
-	max-width: 100%;
-	justfy-content: center;
-	text-align: center;
-	padding-bottom: 20px;
+
+/* media responsive grids */
+
+
+/*ipad landscape*/
+
+@media only screen and (max-width: 1366px) {
+    body {
+        padding: 0 7.5%;
+    }
+
+    .portfolio-wrapper {
+        grid-row-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-.full-portrait {
-	max-width: 85%;
-	text-align; center;
-	justify-content: center;
-	padding-bottom: 20px;
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 0 6%;
+    }
+
+    .portfolio-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        padding: 0 5%;
+    }
+
+    .portfolio-wrapper {
+        grid-row-gap: 3em;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+/* smaller screen - not mobile */
+
+@media screen and (max-width: 992px) {
+
+    body {
+        padding: 0 3%;
+    }
+
+    .portfolio-wrapper {
+        grid-row-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    body {
+        padding: 0 2%;
+    }
+
+    .portfolio-wrapper {
+        grid-row-gap: 2em;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* mobile/phone screen */
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        padding: 0 2%;
+    }
+
+    .portfolio-wrapper {
+        grid-row-gap: 2em;
+        grid-template-columns: 1fr;
+    }
 }
