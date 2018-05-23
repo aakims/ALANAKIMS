@@ -58,7 +58,8 @@ h4 {
     text-align: center;
 }
 
-a:hover {
+a:hover,
+a:active {
     color: #F5C664;
     text-decoration: none;
 }
@@ -115,7 +116,7 @@ a:hover {
     display: grid;
     grid-row-gap: 5em;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row-columns: 1fr 1fr 1fr;
+    /*    grid-row-columns: 1fr 1fr 1fr;*/
     justify-content: space-evenly;
     justify-items: center;
 }
@@ -157,17 +158,21 @@ a:hover {
     color: white;
 }
 
-.worksamples:hover {
+.worksamples:hover,
+.worksamples:active {
     background: #754F45
 }
 
 .worksamples:hover .work-preview-p,
-.worksamples:hover .work-preview-l {
+.worksamples:active .work-preview-p,
+.worksamples:hover .work-preview-l,
+.worksamples:active .work-preview-l {
     background: #754F45;
     opacity: 0.1;
 }
 
-.worksamples:hover .work-description {
+.worksamples:hover .work-description,
+.worksamples:active .work-description {
     opacity: 1;
     z-index: 2;
 }
@@ -289,10 +294,11 @@ a:hover {
 }
 
 
+
 /* media responsive grids */
 
-/*TWO COLUMN GRID*/
 
+/*TWO COLUMN GRID*/
 
 @media only screen and (max-width: 1536px) {
     body {
@@ -310,6 +316,7 @@ a:hover {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 
 
 /*ipad landscape*/
@@ -401,6 +408,7 @@ a:hover {
 
 
 
+
 /* smaller screen - not mobile */
 
 @media screen and (max-width: 992px) {
@@ -455,6 +463,7 @@ a:hover {
 
 
 
+
 /*ONE COLUMN GRID*/
 
 @media only screen and (max-width: 812px) {
@@ -504,6 +513,7 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
