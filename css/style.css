@@ -59,7 +59,7 @@ h4 {
 }
 
 a:hover,
-a:active {
+a:focus {
     color: #F5C664;
     text-decoration: none;
 }
@@ -159,20 +159,20 @@ a:active {
 }
 
 .worksamples:hover,
-.worksamples:active {
+.worksamples:focus {
     background: #754F45
 }
 
 .worksamples:hover .work-preview-p,
-.worksamples:active .work-preview-p,
+.worksamples:focus .work-preview-p,
 .worksamples:hover .work-preview-l,
-.worksamples:active .work-preview-l {
+.worksamples:focus .work-preview-l {
     background: #754F45;
     opacity: 0.1;
 }
 
 .worksamples:hover .work-description,
-.worksamples:active .work-description {
+.worksamples:focus .work-description {
     opacity: 1;
     z-index: 2;
 }
