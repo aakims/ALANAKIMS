@@ -29,7 +29,6 @@ a {
     text-decoration: none;
 }
 
-
 h1 {
     font-family: "nothing you could do";
     font-size: 30px;
@@ -59,7 +58,8 @@ h4 {
 }
 
 a:hover,
-a:focus {
+a:focus,
+a:active {
     color: #F5C664;
     text-decoration: none;
 }
@@ -159,20 +159,24 @@ a:focus {
 }
 
 .worksamples:hover,
-.worksamples:focus {
+.worksamples:focus,
+.worksamples:active {
     background: #754F45
 }
 
 .worksamples:hover .work-preview-p,
 .worksamples:focus .work-preview-p,
+.worksamples:active .work-preview-p,
 .worksamples:hover .work-preview-l,
-.worksamples:focus .work-preview-l {
+.worksamples:focus .work-preview-l,
+.worksamples:active .work-preview-l {
     background: #754F45;
     opacity: 0.1;
 }
 
 .worksamples:hover .work-description,
-.worksamples:focus .work-description {
+.worksamples:focus .work-description,
+.worksamples:active .work-description {
     opacity: 1;
     z-index: 2;
 }
@@ -406,9 +410,6 @@ a:focus {
     }
 }
 
-
-
-
 /* smaller screen - not mobile */
 
 @media screen and (max-width: 992px) {
@@ -421,7 +422,7 @@ a:focus {
         grid-gap: 1em;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        margin: 0 1%;
+        margin: 0 3%;
         padding-top: 3%;
         padding-bottom: 3%;
     }
@@ -460,10 +461,6 @@ a:focus {
     }
 }
 
-
-
-
-
 /*ONE COLUMN GRID*/
 
 @media only screen and (max-width: 812px) {
@@ -475,7 +472,7 @@ a:focus {
         grid-gap: .5em;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
-        margin: 0 1%;
+        margin: 0 3%;
         padding-top: 3%;
         padding-bottom: 3%;
     }
@@ -514,12 +511,6 @@ a:focus {
     }
 }
 
-
-
-
-
-
-
 /* mobile/phone screen */
 
 @media only screen and (max-width: 600px) {
@@ -532,7 +523,7 @@ a:focus {
         grid-gap: .5em;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
-        margin: 0 1%;
+        margin: 0 3%;
         padding-top: 3%;
         padding-bottom: 3%;
     }
